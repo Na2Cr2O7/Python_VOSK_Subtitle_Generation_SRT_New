@@ -3,12 +3,7 @@
 ## **用处**
 基于python的vosk语言模型，进行**一键批量**的生成**多个视频**的**字幕**，中英文都可以。中文识别率不高。  
 **做来倍速播放视频用的** 
-> >GitHub项目链接：
-> >[GitHub链接](https://github.com/RyananChen/Python_VOSK_Subtitle_Generation_SRT)  
 > >有帮助的话可以给个**star**
-> >所有文件打包**下载链接**  
-> > 国内:  [123网盘直链下载](https://www.123pan.com/s/mVTcVv-9oGJ.html)   提取码:RYAN  
-> > GitHub: [Releases链接](https://github.com/RyananChen/Python_VOSK_Subtitle_Generation_SRT/releases/tag/V1.0.0)  
 * * *
 ## **使用说明**
 ---------
@@ -52,13 +47,7 @@ options:
 
 ## **Purpose**
 Leveraging the python-based Vosk language model, this project enables the **one-click batch** generation of **subtitles** for **multiple videos**, supporting both Chinese and English. Note that the recognition accuracy for Chinese is not very high. This tool is particularly useful for creating subtitles to enable faster video playback.
-
-> > GitHub Project Link:
-> > [GitHub Link](https://github.com/RyananChen/Python_VOSK_Subtitle_Generation_SRT)  
 > > If helpful, consider giving it a **star**.
-> > All files download link:  
-> > Domestic: [123Pan Direct Download Link](https://www.123pan.com/s/mVTcVv-9oGJ.html) Extraction code: RYAN  
-> > GitHub: [Releases Link](https://github.com/RyananChen/Python_VOSK_Subtitle_Generation_SRT/releases/tag/V1.0.0)  
 * * *
 ## **Usage Instructions**
 ---------
