@@ -23,8 +23,7 @@
 > 
 下面部分摘抄**CycleUser**的文章  
 首先安装好**python**，不做详细说了。   
-最新的3.11.3版本python [官网下载链接](https://www.python.org/ftp/python/3.11.3/python-3.11.3-amd64.exe  )  
- 
+
 然后从终端上安装两个需要的包  
 
 对于 macOS 用户来说，使用 brew 和 pip3:
@@ -36,7 +35,8 @@
 > pip3 install vosk
   
 使用方法
-'''
+```
+
 usage: new.py [-h] -i INPUT [-p PATH] [-l LANGUAGE]
 
 options:
@@ -45,9 +45,57 @@ options:
   -p, --path PATH       📳model path
   -l, --language LANGUAGE
                         🏁language like en-us, cn etc.
-'''
+
+```
 			
-			
+# **One-click Batch Generation** of **Multiple Videos** with **Chinese and English Subtitles**
+
+## **Purpose**
+Leveraging the python-based Vosk language model, this project enables the **one-click batch** generation of **subtitles** for **multiple videos**, supporting both Chinese and English. Note that the recognition accuracy for Chinese is not very high. This tool is particularly useful for creating subtitles to enable faster video playback.
+
+> > GitHub Project Link:
+> > [GitHub Link](https://github.com/RyananChen/Python_VOSK_Subtitle_Generation_SRT)  
+> > If helpful, consider giving it a **star**.
+> > All files download link:  
+> > Domestic: [123Pan Direct Download Link](https://www.123pan.com/s/mVTcVv-9oGJ.html) Extraction code: RYAN  
+> > GitHub: [Releases Link](https://github.com/RyananChen/Python_VOSK_Subtitle_Generation_SRT/releases/tag/V1.0.0)  
+* * *
+## **Usage Instructions**
+---------
+
+### **Sources**  
+> Vosk project address  
+> https://alphacephei.com/vosk/models    
+
+> **References & Acknowledgments**  
+> What software can automatically generate video subtitles? - CycleUser's answer on Zhihu
+> https://www.zhihu.com/question/397207300/answer/2806069443
+
+Below is an excerpt from **CycleUser**'s article:
+
+Firstly, ensure **python** is installed (details not covered here).
+
+Then, install the two required packages via terminal:
+
+For macOS users, use brew and pip3:
+> brew install ffmpeg  
+> pip3 install vosk   
+
+For Windows users, use winget and pip3:
+> winget install ffmpeg  
+> pip3 install vosk  
+
+**Usage**
+```
+usage: new.py [-h] -i INPUT [-p PATH] [-l LANGUAGE]
+
+options:
+  -h, --help            Show this help message and exit
+  -i, --input INPUT     📂 Input path
+  -p, --path PATH       📳 Model path
+  -l, --language LANGUAGE
+                        🏁 Language like en-us, cn etc.
+```		
 
 
 
