@@ -31,8 +31,7 @@
   
 使用方法
 ```
-
-usage: new.py [-h] -i INPUT [-p PATH] [-l LANGUAGE]
+usage: new.py [-h] -i INPUT [-p PATH] [-l LANGUAGE] [-t THREADS]
 
 options:
   -h, --help            show this help message and exit
@@ -40,6 +39,8 @@ options:
   -p, --path PATH       📳model path
   -l, --language LANGUAGE
                         🏁language like en-us, cn etc.
+  -t, --threads THREADS
+                        🧑‍💻threads count
 
 ```
 			
@@ -76,14 +77,16 @@ For Windows users, use winget and pip3:
 
 **Usage**
 ```
-usage: new.py [-h] -i INPUT [-p PATH] [-l LANGUAGE]
+usage: new.py [-h] -i INPUT [-p PATH] [-l LANGUAGE] [-t THREADS]
 
 options:
-  -h, --help            Show this help message and exit
-  -i, --input INPUT     📂 Input path
-  -p, --path PATH       📳 Model path
+  -h, --help            show this help message and exit
+  -i, --input INPUT     📂input path
+  -p, --path PATH       📳model path
   -l, --language LANGUAGE
-                        🏁 Language like en-us, cn etc.
+                        🏁language like en-us, cn etc.
+  -t, --threads THREADS
+                        🧑‍💻threads count
 ```		
 
 
