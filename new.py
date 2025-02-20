@@ -9,9 +9,13 @@ SetLogLevel(-1)
 SAMPLE_RATE = 16000
 THREAD=4
 video_appendix = [".mp4", ".mkv", ".flv", ".avi", ".rmvb", ".wmv", ".mov", ".mpg", ".mpeg", ".vob", ".m4v"]
-
+audio_appendix=[".mp3", ".wav", ".flac", ".aac", ".m4a", ".ogg", ".opus"]
+lang_to_process=['cn','None']
+def process_text(text):
+    text=text.replace(" ", "").replace("-->",' --> ')
+    return text
 def process_file(input_file, model_path, language):
-    if os.path.splitext(input_file)[1] not in video_appendix:
+    if os.path.splitext(input_file)[1] not in video_appendix+audio_appendix:
         print("❌ ", input_file)
         return
     if os.path.exists(os.path.splitext(input_file)[0] + ".srt"):
@@ -25,7 +29,10 @@ def process_file(input_file, model_path, language):
         # print(rec.SrtResult(stream))
         rec = KaldiRecognizer(Model(model_path) if language == "None" else Model(lang=language), SAMPLE_RATE)
         rec.SetWords(True)
-        result.append(rec.SrtResult(stream).strip())
+        if language in lang_to_process:
+            result.append(process_text(rec.SrtResult(stream).strip())) 
+        else:
+            result.append(rec.SrtResult(stream).strip())
 
     output_path = os.path.splitext(input_file)[0] + ".srt"
     with open(output_path, 'w') as output:
