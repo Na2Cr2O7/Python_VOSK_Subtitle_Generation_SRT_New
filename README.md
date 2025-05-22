@@ -31,7 +31,7 @@
   
 使用方法
 ```
-usage: new.py [-h] -i INPUT [-p PATH] [-l LANGUAGE] [-t THREADS]
+usage: new.py [-h] -i INPUT [-p PATH] [-l LANGUAGE] [-t THREADS] [-e ENCODING] [-c ECHO]
 
 options:
   -h, --help            show this help message and exit
@@ -41,6 +41,9 @@ options:
                         🏁language like en-us, cn etc.
   -t, --threads THREADS
                         🧑‍💻threads count
+  -e, --encoding ENCODING
+                        ⛳encoding
+  -c, --echo ECHO       🎤print subtitles to console
 
 ```
 			
